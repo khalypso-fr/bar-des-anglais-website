@@ -924,6 +924,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fontsource/bagnard-sans@npm:^5.0.11":
+  version: 5.0.11
+  resolution: "@fontsource/bagnard-sans@npm:5.0.11"
+  checksum: 10c0/05c5f3af9e6305be376604eaa495e38a57cf805d94a22fbcf95fb09086d856ca644e35354a5e63729ada031bc05c46d7d9220c2b4c1faaabc5bb23e97d87b2e8
+  languageName: node
+  linkType: hard
+
+"@fontsource/bagnard@npm:^5.0.11":
+  version: 5.0.11
+  resolution: "@fontsource/bagnard@npm:5.0.11"
+  checksum: 10c0/fc7d96ea24528cdd8c4b8fc0b30b0e57c323d7c4336ff3d8f83110a82ab3ca6e1b1bd4e62ae2b6cce66db4ec168a5b482fce07e97b484e46f1fafc1cec8313dc
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/module-importer@npm:^1.0.1":
   version: 1.0.1
   resolution: "@humanwhocodes/module-importer@npm:1.0.1"
@@ -1506,6 +1520,8 @@ __metadata:
     "@astrolib/seo": "npm:^1.0.0-beta.5"
     "@eslint/js": "npm:^9.9.0"
     "@fontsource-variable/inter": "npm:^5.0.20"
+    "@fontsource/bagnard": "npm:^5.0.11"
+    "@fontsource/bagnard-sans": "npm:^5.0.11"
     "@iconify-json/flat-color-icons": "npm:^1.1.11"
     "@iconify-json/tabler": "npm:^1.1.120"
     "@tailwindcss/typography": "npm:^0.5.14"

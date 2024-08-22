@@ -1,5 +1,5 @@
 site:
-  name: AstroWind
+  name: Bar des Anglais
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
@@ -9,7 +9,7 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
+    default: Bar des Anglais
     template: '%s — AstroWind'
   description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
   robots:
@@ -28,7 +28,7 @@ metadata:
     cardType: summary_large_image
 
 i18n:
-  language: en
+  language: fr
   textDirection: ltr
 
 apps:
@@ -69,4 +69,4 @@ analytics:
       id: null # or "G-XXXXXXXXXX"
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'light:only' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
