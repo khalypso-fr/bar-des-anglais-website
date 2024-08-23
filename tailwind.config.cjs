@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: 'var(--aw-color-primary)',
-        secondary: 'var(--aw-color-secondary)',
-        accent: 'var(--aw-color-accent)',
+        primary: 'rgb(from var(--aw-color-primary) r g b / <alpha-value>)',
+        secondary: 'rgb(from var(--aw-color-secondary) r g b / <alpha-value>)',
+        accent: 'rgb(from var(--aw-color-accent) r g b / <alpha-value>)',
         default: 'var(--aw-color-text-default)',
         muted: 'var(--aw-color-text-muted)',
       },
