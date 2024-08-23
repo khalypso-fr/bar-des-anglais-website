@@ -1,6 +1,6 @@
 site:
   name: Bar des Anglais
-  site: 'https://astrowind.vercel.app'
+  site: 'https://shimmering-gaufre-4768ca.netlify.app'
   base: '/'
   trailingSlash: false
 
@@ -11,21 +11,17 @@ metadata:
   title:
     default: Bar des Anglais
     template: '%s — Bar des Anglais'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "Pailotte situé à Lecci sur la plage de Cala Rossa"
   robots:
     index: true
     follow: true
   openGraph:
     site_name: Bar des Anglais
     images:
-      - url: '~/assets/images/default.png'
-        width: 1200
-        height: 628
+      - url: '~/assets/images/logo.jpg'
+        width: 2048
+        height: 2048
     type: website
-  twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
-    cardType: summary_large_image
 
 i18n:
   language: fr
@@ -33,7 +29,7 @@ i18n:
 
 apps:
   blog:
-    isEnabled: true
+    isEnabled: false
     postsPerPage: 6
 
     post:
