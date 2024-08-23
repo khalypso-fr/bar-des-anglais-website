@@ -1,6 +1,19 @@
 import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
 import type { HTMLAttributes, ImageMetadata } from 'astro/types';
 
+interface MenuRestaurantSimpleItem {
+  title: string;
+  description?: string;
+  price: number;
+}
+
+interface MenuRestaurantVariantItem {
+  title: string;
+  variants: Array<{ description: string; price: number }>;
+}
+
+export type MenuRestaurantItem = MenuRestaurantSimpleItem | MenuRestaurantVariantItem;
+
 export interface Post {
   /** A unique ID number that identifies a post. */
   id: string;

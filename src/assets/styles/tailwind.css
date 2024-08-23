@@ -18,6 +18,9 @@
   .text-muted {
     color: var(--aw-color-text-muted);
   }
+  .text-link {
+    text-decoration: underline;
+  }
 }
 
 @layer components {

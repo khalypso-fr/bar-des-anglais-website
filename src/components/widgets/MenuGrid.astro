@@ -1,0 +1,31 @@
+---
+import type { Menu } from '~/utils/menu';
+import MenuItemGrid from './MenuGridItem.astro';
+
+interface Props {
+  menu: Menu;
+}
+
+const { menu } = Astro.props;
+---
+
+<h4 class="text-3xl text-left lg:text-center text-accent mb-4">{menu.title}</h4>
+<div class="grid grid-flow-row gap-4">
+  {
+    menu.categories.map((category) => (
+      <>
+        <div>
+          <h6 class="text-lg mb-3 lg:text-center text-left text-muted">{category.title}</h6>
+          {category.subtitle && (
+            <h6 class="text-sm mb-3 lg:text-center text-left text-muted italic">{category.subtitle}</h6>
+          )}
+        </div>
+        <div class="grid lg:grid-cols-2 gap-2">
+          {category.items.map((item) => (
+            <MenuItemGrid {...item} />
+          ))}
+        </div>
+      </>
+    ))
+  }
+</div>

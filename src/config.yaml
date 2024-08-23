@@ -10,13 +10,13 @@ site:
 metadata:
   title:
     default: Bar des Anglais
-    template: '%s — AstroWind'
+    template: '%s — Bar des Anglais'
   description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Bar des Anglais
     images:
       - url: '~/assets/images/default.png'
         width: 1200

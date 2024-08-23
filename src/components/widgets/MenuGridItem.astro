@@ -1,0 +1,26 @@
+---
+import type { MenuRestaurantItem } from '~/types';
+
+export type Props = MenuRestaurantItem;
+
+const item = Astro.props;
+---
+
+<div class="grid grid-cols-4 grid-rows-3">
+  <h5 class="col-span-3 text-xl font-semibold">{item.title}</h5>
+  <span class="row-span-3"
+    >{'variants' in item ? item.variants.map(({ price }) => price).join(' / ') : item.price}€</span
+  >
+  {
+    'description' in item && item.description && (
+      <span class="col-span-3 row-span-2 text-muted text-sm">
+        {item.description}{' '}
+        {'variants' in item && item.variants && (
+          <span class="col-span-3 row-span-2 text-muted text-sm">
+            ({item.variants.map(({ description }) => description).join(' / ')})
+          </span>
+        )}
+      </span>
+    )
+  }
+</div>

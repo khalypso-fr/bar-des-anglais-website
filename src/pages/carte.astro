@@ -1,0 +1,35 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import MenuGrid from '~/components/widgets/MenuGrid.astro';
+import { fetchMenu } from '~/utils/menu';
+
+const metadata = {
+  title: 'Carte',
+};
+
+const { boire, manger } = await fetchMenu();
+---
+
+<Layout metadata={metadata}>
+  <WidgetWrapper>
+    <Headline
+      title="La Carte"
+      classes={{
+        container: 'max-w-xl sm:mx-auto lg:max-w-2xl',
+        title: 'text-4xl md:text-5xl font-bold tracking-tighter mb-4 font-heading',
+        subtitle: 'max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-slate-400',
+      }}
+    />
+    <div class="flex flex-col md:flex-row w-full gap-3">
+      <div class="lg:w-1/2">
+        <MenuGrid menu={manger} />
+      </div>
+      <div class="lg:w-1/2">
+        <MenuGrid menu={boire} />
+      </div>
+    </div>
+  </WidgetWrapper>
+</Layout>
