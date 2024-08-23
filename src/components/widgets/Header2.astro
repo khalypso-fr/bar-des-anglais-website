@@ -31,10 +31,11 @@ export interface Props {
 const { id = 'header', links = [], actions = [] } = Astro.props;
 
 const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
+console.log(currentPath);
 ---
 
 <header
-  class="w-full sticky top-0 z-40 flex-none mx-auto border-b border-gray-50/0 transition-[opacity] ease-in-out"
+  class="w-full sticky top-0 z-40 flex-none mx-auto border-b border-gray-50/0 transition-[opacity] ease-in-out bg-white"
   data-aw-sticky-header
   id={id}
 >

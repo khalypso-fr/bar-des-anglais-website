@@ -1,0 +1,37 @@
+---
+import Stats from '~/components/widgets/Stats.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import { fetchTestimonials } from '~/utils/testimonial';
+
+const metadata = {
+  title: 'Informations',
+};
+
+const testimonials = await fetchTestimonials();
+---
+
+<Layout metadata={metadata}>
+  <Stats
+    title="On nous rappelle souvent nos qualités..."
+    stats={[
+      {
+        icon: 'tabler:mood-smile',
+        title: 'Un accueil chaleureux',
+      },
+      {
+        icon: 'tabler:beach',
+        title: 'Au bord de la plage',
+      },
+      {
+        icon: 'tabler:confetti',
+        title: 'Une ambiance festive',
+      },
+      {
+        icon: 'tabler:pig-money',
+        title: 'Excellent rapport qualité-prix ',
+      },
+    ]}
+  />
+  <Testimonials testimonials={testimonials} />
+</Layout>

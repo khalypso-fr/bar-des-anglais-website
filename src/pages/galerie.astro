@@ -1,0 +1,23 @@
+---
+import Image from '~/components/common/Image.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Galerie',
+};
+---
+
+<Layout metadata={metadata}>
+  <WidgetWrapper>
+    <div class="columns-1 gap-5 sm:columns-2 sm:gap-8 [&>img:not(:first-child)]:mt-8">
+      <Image src="~/assets/images/galerie/bar_des_anglais.jpg" alt={'Entrée du bar depuis la plage'} />
+      <Image src="~/assets/images/galerie/plage-bar-des-anglais.jpg" alt={'Plage au coucher de soleil'} />
+      <Image src="~/assets/images/galerie/plage-1.jpg" alt={'Pailotte'} />
+      <Image src="~/assets/images/galerie/plage-2.jpg" alt={'Pailotte 2'} />
+      <Image src="~/assets/images/galerie/salade-1.jpg" alt={'Salade'} />
+      <Image src="~/assets/images/galerie/salade-2.jpg" alt={'Salade 2'} />
+      <Image src="~/assets/images/galerie/salade-3.jpg" alt={'Salade 3'} />
+    </div>
+  </WidgetWrapper>
+</Layout>

@@ -3,23 +3,19 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero2 from '~/components/widgets/Hero2.astro';
 import { SITE } from 'astrowind:config';
-import Stats from '~/components/widgets/Stats.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
-import { fetchTestimonials } from '~/utils/testimonial';
+import Content from '~/components/widgets/Content.astro';
 
 const metadata = {
   title: SITE.name,
   ignoreTitleTemplate: true,
 };
-
-const testimonials = await fetchTestimonials();
 ---
 
 <Layout metadata={metadata}>
   <!-- Hero2 Widget ******************* -->
   <Hero2 image={{ src: '~/assets/images/beach_big_ben.png', alt: "Illustration d'une plage avec big ben au loin" }}>
     <Fragment slot="title">
-      <span class="text-accent highlight">L'Angleterre</span> n'aura jamais été aussi près de <span
+      <span class="text-accent highlight">L'Angleterre</span> n'aura jamais été aussi proche de <span
         class="text-accent highlight">la Corse</span
       >
     </Fragment>
@@ -31,25 +27,40 @@ const testimonials = await fetchTestimonials();
       > dans un cadre pittoresque à l’ombre des pins.
     </Fragment>
   </Hero2>
-  <Stats
-    stats={[
+
+  <Content
+    title="On se retrouve bientôt chez nous"
+    subtitle="Route de Cala Rossa à côté du Grand Hôtel - 20137 Lecci"
+    isReversed
+    items={[
       {
-        icon: 'tabler:mood-smile',
-        title: 'Un accueil chaleureux',
+        title: 'Haute saison',
+        description: '<span class="font-semibold">Du lundi au dimanche sauf le mercredi</span> : de 9 h à 19 h.<br/>',
+        icon: 'tabler:sun',
+        classes: {
+          icon: 'bg-primary',
+        },
       },
       {
-        icon: 'tabler:beach',
-        title: 'Au bord de la plage',
-      },
-      {
-        icon: 'tabler:confetti',
-        title: 'Une ambiance festive',
-      },
-      {
-        icon: 'tabler:pig-money',
-        title: 'Excellent rapport qualité-prix ',
+        title: 'Basse saison',
+        description:
+          'Evènements ponctuels le <span class="font-semibold">Dimanche</span> (concours de pétanques, oursinades,...)',
+        icon: 'tabler:temperature-snow',
+        classes: {
+          icon: 'bg-primary',
+        },
       },
     ]}
-  />
-  <Testimonials title="Ils parlent de nous" subtitle="et c'est en bien en plus..." testimonials={testimonials} />
+  >
+    <Fragment slot="image">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.539303278856!2d9.333508712314954!3d41.62247297115119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d985dacd66d581%3A0x4ca06f5ec023af96!2sLe%20Bar%20des%20Anglais!5e0!3m2!1sfr!2sfr!4v1724428604564!5m2!1sfr!2sfr"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </Fragment>
+  </Content>
 </Layout>
