@@ -1,5 +1,6 @@
 ---
 title: À MANGER
+icon: fluent-emoji-high-contrast:fork-and-knife-with-plate
 categories:
     -   title: Les Salades
         items:

@@ -1,6 +1,7 @@
 ---
 import type { Menu } from '~/utils/menu';
 import MenuItemGrid from './MenuGridItem.astro';
+import { Icon } from 'astro-icon/components';
 
 interface Props {
   menu: Menu;
@@ -9,7 +10,10 @@ interface Props {
 const { menu } = Astro.props;
 ---
 
-<h4 class="text-3xl text-left lg:text-center text-accent mb-4">{menu.title}</h4>
+<div class="flex text-3xl items-center mb-4 px-2 text-accent gap-2">
+  <Icon name={menu.icon} />
+  <h4>{menu.title}</h4>
+</div>
 <div class="grid grid-flow-row gap-4">
   {
     menu.categories.map((category) => (

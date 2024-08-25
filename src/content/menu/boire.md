@@ -1,5 +1,6 @@
 ---
 title: À BOIRE
+icon: fluent-emoji-high-contrast:tropical-drink
 categories:
     -   title: Eaux et Softs
         items:

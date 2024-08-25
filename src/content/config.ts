@@ -16,6 +16,7 @@ export const menuRestaurantItem = z.union([menuRestaurantSimpleItem, menuRestaur
 
 export const menu = z.object({
   title: z.string(),
+  icon: z.string(),
   categories: z.array(
     z.object({
       title: z.string(),

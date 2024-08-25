@@ -6,9 +6,9 @@ export type Props = MenuRestaurantItem;
 const item = Astro.props;
 ---
 
-<div class="grid grid-cols-4 grid-rows-3">
+<div class="grid grid-cols-4 grid-rows-3 p-2">
   <h5 class="col-span-3 text-xl font-semibold">{item.title}</h5>
-  <span class="row-span-3"
+  <span class="row-span-3 text-right"
     >{'variants' in item ? item.variants.map(({ price }) => price).join(' / ') : item.price}€</span
   >
   {
