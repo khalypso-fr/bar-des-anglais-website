@@ -9,6 +9,7 @@ interface MenuRestaurantSimpleItem {
 
 interface MenuRestaurantVariantItem {
   title: string;
+  description?: string;
   variants: Array<{ description: string; price: number }>;
 }
 
