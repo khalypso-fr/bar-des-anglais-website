@@ -2,15 +2,20 @@
 import type { Menu } from '~/utils/menu';
 import MenuItemGrid from './MenuGridItem.astro';
 import { Icon } from 'astro-icon/components';
+import { twMerge } from 'tailwind-merge';
 
 interface Props {
   menu: Menu;
+  classes?: {
+    title?: string;
+    grid?: string;
+  };
 }
 
-const { menu } = Astro.props;
+const { menu, classes = { title: '', grid: '' } } = Astro.props;
 ---
 
-<div class="flex text-3xl items-center mb-4 px-2 text-accent gap-2">
+<div class={twMerge(['flex text-3xl items-center mb-4 px-2 text-accent gap-2', classes.title])}>
   <Icon name={menu.icon} />
   <h4>{menu.title}</h4>
 </div>
@@ -19,12 +24,12 @@ const { menu } = Astro.props;
     menu.categories.map((category) => (
       <>
         <div>
-          <h6 class="text-lg mb-3 lg:text-center text-left bg-accent/40">{category.title}</h6>
+          <h6 class="text-lg lg:text-center text-left bg-accent/40 p-2 rounded-md">{category.title}</h6>
           {category.subtitle && (
             <h6 class="text-sm mb-3 lg:text-center text-left text-muted italic">{category.subtitle}</h6>
           )}
         </div>
-        <div class="grid lg:grid-cols-2 gap-2">
+        <div class={twMerge('grid lg:grid-cols-2 gap-2', classes.grid)}>
           {category.items.map((item) => (
             <MenuItemGrid {...item} />
           ))}
