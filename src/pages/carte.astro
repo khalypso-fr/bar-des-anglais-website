@@ -5,6 +5,7 @@ import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Headline from '~/components/ui/Headline.astro';
 import MenuGrid from '~/components/widgets/MenuGrid.astro';
 import { fetchMenu } from '~/utils/menu';
+import { twMerge } from 'tailwind-merge';
 
 const metadata = {
   title: 'Carte',
@@ -15,12 +16,15 @@ const { boire, manger } = await fetchMenu();
 
 <Layout metadata={metadata}>
   <WidgetWrapper>
+    <slot name="bg">
+      <div class={twMerge([`bg-[url('~/assets/images/i-like-food.svg')]`, 'bg-repeat'], 'w-full h-full absolute inset-0 fill-primary')}></div>
+    </slot>
     <Headline
       title="La Carte"
       subtitle="Cuisine ouverte de 12h à 15h.<br/> En capacité restreinte jusqu’à 19h pour les en-cas"
       classes={{
         container: 'max-w-xl sm:mx-auto lg:max-w-2xl',
-        title: 'text-4xl md:text-5xl font-bold tracking-tighter mb-4 font-heading',
+        title: 'text-4xl md:text-5xl font-bold tracking-tighter font-heading',
         subtitle: 'max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-slate-400',
       }}
     />

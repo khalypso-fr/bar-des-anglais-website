@@ -3,6 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import { SITE } from 'astrowind:config';
 import Content from '~/components/widgets/Content.astro';
+import Divider from '~/components/widgets/Divider.astro';
 
 const metadata = {
   title: SITE.name,
@@ -26,6 +27,8 @@ const metadata = {
       > dans un cadre pittoresque à l’ombre des pins.
     </Fragment>
   </Hero2>
+
+  <Divider />
 
   <Content
     title="On se retrouve bientôt chez nous"

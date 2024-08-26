@@ -24,7 +24,7 @@ const { menu, classes = { title: '', grid: '' } } = Astro.props;
     menu.categories.map((category) => (
       <>
         <div>
-          <h6 class="text-lg lg:text-center text-left bg-accent/40 p-2 rounded-md">{category.title}</h6>
+          <h6 class="text-lg lg:text-center text-left bg-primary text-white p-2 rounded-md">{category.title}</h6>
           {category.subtitle && (
             <h6 class="text-sm mb-3 lg:text-center text-left text-muted italic">{category.subtitle}</h6>
           )}

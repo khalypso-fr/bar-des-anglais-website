@@ -1,0 +1,24 @@
+---
+import wave from '~/assets/images/wave.svg';
+import Image from '../common/Image.astro';
+import WidgetWrapper from '../ui/WidgetWrapper.astro';
+import { Icon } from 'astro-icon/components';
+import { twMerge } from 'tailwind-merge';
+
+interface Props {
+  classes?: {
+    container?: string;
+    left?: string;
+    icon?: string;
+    right?: string;
+  };
+}
+
+const { classes: { container = '', left = '', icon = '', right = '' } = {} } = Astro.props;
+---
+
+<WidgetWrapper containerClass={twMerge('flex gap-3 justify-center items-center', container)}>
+  <Image src={wave.src} alt={'Element graphique de séparation'} class={left} />
+  <Icon name={'tabler:sun-filled'} class={twMerge('text-accent text-3xl', icon)} />
+  <Image src={wave.src} alt={'Element graphique de séparation'} class={twMerge('scale-x-[-1]', right)} />
+</WidgetWrapper>

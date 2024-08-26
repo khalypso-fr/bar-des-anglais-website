@@ -1,4 +1,5 @@
 ---
+import Divider from '~/components/widgets/Divider.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
@@ -33,5 +34,6 @@ const testimonials = await fetchTestimonials();
       },
     ]}
   />
+  <Divider />
   <Testimonials testimonials={testimonials} />
 </Layout>

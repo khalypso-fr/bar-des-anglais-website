@@ -36,7 +36,7 @@ export default defineConfig({
     icon({
       include: {
         tabler: ['*'],
-        'fluent-emoji-high-contrast':['*'],
+        'fluent-emoji-high-contrast': ['*'],
         'flat-color-icons': [
           'template',
           'gallery',
