@@ -962,10 +962,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/bagnard@npm:^5.0.11":
-  version: 5.0.11
-  resolution: "@fontsource/bagnard@npm:5.0.11"
-  checksum: 10c0/fc7d96ea24528cdd8c4b8fc0b30b0e57c323d7c4336ff3d8f83110a82ab3ca6e1b1bd4e62ae2b6cce66db4ec168a5b482fce07e97b484e46f1fafc1cec8313dc
+"@fontsource/bagnard@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "@fontsource/bagnard@npm:5.1.0"
+  checksum: 10c0/6302e6f790227f08a3d84dca4be7f49b8a7cf3b88373650eb65213210389ff8b0739a842bb00f37e9481157f7bed1ade8d687be4ac6249189ddd5ffc21806b4e
   languageName: node
   linkType: hard
 
@@ -1560,7 +1560,7 @@ __metadata:
     "@astrolib/seo": "npm:^1.0.0-beta.5"
     "@eslint/js": "npm:^9.10.0"
     "@fontsource-variable/inter": "npm:^5.0.20"
-    "@fontsource/bagnard": "npm:^5.0.11"
+    "@fontsource/bagnard": "npm:^5.1.0"
     "@fontsource/bagnard-sans": "npm:^5.0.11"
     "@iconify-json/flat-color-icons": "npm:^1.2.0"
     "@iconify-json/fluent-emoji-high-contrast": "npm:^1.2.0"
