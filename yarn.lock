@@ -962,10 +962,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/bagnard-sans@npm:^5.0.11":
-  version: 5.0.11
-  resolution: "@fontsource/bagnard-sans@npm:5.0.11"
-  checksum: 10c0/05c5f3af9e6305be376604eaa495e38a57cf805d94a22fbcf95fb09086d856ca644e35354a5e63729ada031bc05c46d7d9220c2b4c1faaabc5bb23e97d87b2e8
+"@fontsource/bagnard-sans@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "@fontsource/bagnard-sans@npm:5.1.0"
+  checksum: 10c0/aa5da03d235f1bb9fef9401c6f1f6c5924f9ac7cb5d2e6d16a3e8ddfa2158a99f60707f5bc8188ef3df54422a389502a06752a0fa187be9b4314589b0d4c5d15
   languageName: node
   linkType: hard
 
@@ -1568,7 +1568,7 @@ __metadata:
     "@eslint/js": "npm:^9.11.1"
     "@fontsource-variable/inter": "npm:^5.0.20"
     "@fontsource/bagnard": "npm:^5.1.0"
-    "@fontsource/bagnard-sans": "npm:^5.0.11"
+    "@fontsource/bagnard-sans": "npm:^5.1.0"
     "@iconify-json/flat-color-icons": "npm:^1.2.0"
     "@iconify-json/fluent-emoji-high-contrast": "npm:^1.2.0"
     "@iconify-json/tabler": "npm:^1.2.4"
