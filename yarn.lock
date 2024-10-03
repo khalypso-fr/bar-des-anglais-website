@@ -999,12 +999,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/fluent-emoji-high-contrast@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@iconify-json/fluent-emoji-high-contrast@npm:1.2.0"
+"@iconify-json/fluent-emoji-high-contrast@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "@iconify-json/fluent-emoji-high-contrast@npm:1.2.1"
   dependencies:
     "@iconify/types": "npm:*"
-  checksum: 10c0/bc2dd94a0927ffb7114d4f89a77045ff4135468b2cfcd7abcbf1efdeda65f0c4cecdf664d28a858e6255c8fcaa6cdc992c0850b0eade712ee589b85845b01cc8
+  checksum: 10c0/df1fed9d096db65ec38596b2b3a26eb81ec110fff3681efc9806e1f5b3db75410b9504357f6f74221a3fb610dd6c49f9e2cd715f3c11c0acd726ba1116a56e27
   languageName: node
   linkType: hard
 
@@ -1570,7 +1570,7 @@ __metadata:
     "@fontsource/bagnard": "npm:^5.1.0"
     "@fontsource/bagnard-sans": "npm:^5.1.0"
     "@iconify-json/flat-color-icons": "npm:^1.2.0"
-    "@iconify-json/fluent-emoji-high-contrast": "npm:^1.2.0"
+    "@iconify-json/fluent-emoji-high-contrast": "npm:^1.2.1"
     "@iconify-json/tabler": "npm:^1.2.4"
     "@tailwindcss/typography": "npm:^0.5.15"
     "@types/eslint__js": "npm:^8.42.3"
